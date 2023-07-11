@@ -1,8 +1,4 @@
-from fastapi import FastAPI, Body, Request
-from pathlib import Path
-import torch
 import os
-import pandas as pd
 from torch import nn
 from google.cloud import storage
 import transformers
@@ -10,9 +6,9 @@ from transformers import AutoTokenizer
 from transformers import AutoModelForSeq2SeqLM, DataCollatorForSeq2Seq, Seq2SeqTrainingArguments, Seq2SeqTrainer
 
 
-__version__ = "1.0"
+# __version__ = "1.0"
 
-BASE_DIR = Path(__file__).resolve(strict=True).parent
+# BASE_DIR = Path(__file__).resolve(strict=True).parent
 
 max_input_length = 1024
 max_target_length = 128
