@@ -15,7 +15,7 @@ import transformers
 from transformers import AutoModelForSeq2SeqLM, DataCollatorForSeq2Seq, Seq2SeqTrainingArguments, Seq2SeqTrainer
 import gc
 
-
+gc.collect()
 
 DEVICE = "cuda" if torch.cuda.is_available() else "cpu"
 print("[INFO] training using {}".format(torch.cuda.get_device_name(0)))
